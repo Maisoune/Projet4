@@ -1,0 +1,332 @@
+/****** General ***********/
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: Roboto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title {
+    font-size: 20px;
+    padding-left: 5px;
+    padding-bottom: 12px;
+}
+
+/*Header*/
+
+#main-header {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-header a {
+    display: flex;
+    flex-direction: row;
+}
+
+#main-header .fleche {
+    color: black;
+    position: relative;
+    left: 20px;
+    top: 37px;
+}
+
+#main-header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-header .logo img {
+    width: 45%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#main-header .photo img {
+    width: 100%;
+}
+
+.taste {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+    background-color: rgb(245, 245, 245);
+    position: relative;
+    bottom: 45px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.taste h1 {
+    font-family: shrikhand;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+.taste .heart {
+    color: black;
+    position: relative;
+    bottom: 33px;
+    left: 210px;
+}
+
+.taste .heart i {
+    color: black;
+    font-size: 23px;
+}
+
+.taste h2 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+.taste .part {
+    padding-bottom: 25px;
+
+}
+
+.taste hr {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.taste .menu {
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 13px;
+    margin-top: 10px;
+    margin-right: 15px;
+    border: none;
+    font-size: 13px;
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0px 3px 10px rgb(206, 204, 204);
+    cursor: pointer;
+    position: relative;
+}
+
+.taste input {
+    color: white;
+    font-size: 20px;
+    background-color: rgb(160, 236, 229);
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.taste .menu h3 {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.taste .menu .plat-et-prix {
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.taste .menu .plat-et-prix .price {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.taste .menu .checkbox-container {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 300px;
+    bottom: 50px;
+    transform: (-50%, -50%);
+}
+
+.taste .menu .toggle-content {
+    display: block;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.taste .menu .checkbox-container input [type="checkbox"] {
+    display: none;
+}
+
+.taste .menu .checkbox-container input [type="checkbox"]:checked + .toggle-content {
+    background-color: turquoise;
+}
+
+
+.button-command {
+    border-radius: 25px;
+    background: linear-gradient(to top, #9356DC, #FF79DA);
+    color: white;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 15px;
+    margin-left: 70px;
+    filter: drop-shadow(0px 3px 3px rgb(179, 177, 177));
+
+}
+
+/* Footer */
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(58, 57, 57);
+    padding-bottom: 70px;
+    position: relative;
+    bottom: 50px;
+}
+
+.footer-link h3 {
+    font-family: shrikhand;
+    font-weight: normal;
+    font-size: 15px;
+    color: white;
+    padding-left: 20px;
+}
+
+.footer-link nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link nav a {
+    color: white;
+    font-size: 13px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.footer-link nav i {
+    font-size: 10px;
+    padding-right: 10px;
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (desktop, less/equal than 1024px) */
+@media (min-width: 1024px) {
+
+    #main-header .logo img {
+        width: 15%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #main-header .photo img {
+        height: 650px;
+    }
+
+    #main-header .fleche {
+        font-size: 20px;
+    }
+
+    .taste {
+        margin-left: 170px;
+        margin-right: 170px;
+        padding-left: 170px;
+        padding-right: 170px;
+    }
+
+    .taste h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .taste .heart {
+        position: relative;
+        bottom: 60px;
+        left: 480px;
+    }
+
+    .taste .heart i {
+        font-size: 30px;
+    }
+
+    .taste h2 {
+        font-size: 17px;
+
+    }
+
+    .taste .menu h3 {
+        font-size: 17px;
+    }
+
+    .taste .menu p {
+        font-size: 15px;
+    }
+
+    .button-command {
+        margin-left: 230px;
+    }
+
+    .footer-link {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: 100px;
+    }
+
+    .footer-link h3 {
+        padding-left: 80px;
+        padding-top: 20px;
+    }
+
+    .footer-link nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    .footer-link .end {
+        font-weight: bold;
+        padding-left: 0px;
+        padding-right: 15px;
+    }
+}
+
+/* ... */
