@@ -8,7 +8,6 @@
     <title>la-note-enchantee</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href=link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -18,27 +17,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
-    <style type="text/css">
-        a:link {
-            text-decoration: none
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
     <header id=main-header>
 
-        <a href="#" class="fleche"><i class="fa-solid fa-arrow-left"></i></a>
+        <a href="/index.html" class="fleche"><i class="fa-solid fa-arrow-left"></i></a>
 
         <a href="#" class="logo">
-            <img src="./Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="logo de l'entreprise" id="logo">
+            <img src="./Images-et-textes-Ohmyfood/images/logo/ohmyfood.png" alt="logo de l'entreprise" id="logo">
         </a>
 
         <div class="photo">
-            <img src="./Images et textes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+            <img src="./Images-et-textes-Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
                 alt="Image montrant une assiette au restaurant">
         </div>
     </header>
@@ -48,75 +43,152 @@
         <h1>La note enchantée</h1>
 
         <div class="heart">
-            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="#">
+                <img class="coeur1" src="./Images-et-textes-Ohmyfood/images/coeur.png" alt="coeur blanc">
+                <img class="coeur2" src="./Images-et-textes-Ohmyfood/images/coeur-violet.png" alt="coeur violet">
+            </a>
         </div>
 
-        <div class="part">
+        <div class="part boutons1">
             <h2>ENTRÉES</h2>
 
-            <hr noshade width="35" size="3" align="left" color="turquoise">
+            <label class="menu">
+                <span class="menu-title">Ravioles de fois gras</span>
+                <span class="plat-et-prix">
+                    <span class="truncate">Accompagnées de leur crème à la truffe</span>
+                    <span class="price">25€</span>
 
-            <button class="menu">
-                <h3>Ravioles de fois gras</h3>
-                <p>Accompagnées de leur crème à la truffe 25€</p>
-            </button>
+                    <span class="checkbox">
+                        <input class="checkbox_input" type="checkbox">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </span>
+                </span>
+            </label>
 
-            <button class="menu">
-                <h3>Caviar osciètre</h3>
-                <p>Sur blini à la farine de blé noire 35€</p>
-            </button>
+            <label class="menu">
+                <span class="menu-title">Caviar osciètre</span>
+                <span class="plat-et-prix">
+                    <span class="truncate">Sur blini à la farine de blé noire</span>
+                    <span class="price">35€</span>
 
-            <button class="menu">
-                <h3>Homard et espuma de potiron</h3>
-                <p>Marinés aux zestes d'orange 20€</p>
-            </button>
+                    <span class="checkbox">
+                        <input class="checkbox_input" type="checkbox">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </span>
+                </span>
+            </label>
 
-            <button class="menu">
-                <h3>Foie gras de canard cuit entier</h3>
-                <p>Confiture de figue et pain toasté 35€</p>
-            </button>
+            <label class="menu">
+                <span class="menu-title">Homard et espuma de potiron</span>
+                <span class="plat-et-prix">
+                    <span class="truncate">Marinés aux zestes d'orange</span>
+                    <span class="price">20€</span>
+
+                    <span class="checkbox">
+                        <input class="checkbox_input" type="checkbox">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </span>
+                </span>
+            </label>
+
+            <label class="menu">
+                <span class="menu-title">Foie gras de canard cuit entier</span>
+                <span class="plat-et-prix">
+                    <span class="truncate">Confiture de figue et pain toasté</span>
+                    <span class="price">35€</span>
+
+                    <span class="checkbox">
+                        <input class="checkbox_input" type="checkbox">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </span>
+                </span>
+            </label>
         </div>
 
-        <div class="part">
+        <div class="part boutons2">
             <h2>PLATS</h2>
 
-            <hr noshade width="35" size="3" align="left" color="turquoise">
+            <label class="menu">
+                <span class="menu-title">Noix de coquilles Saint-Jacques</span>
+                <span class="plat-et-prix">
+                    <span class="truncate">Sur lit de purée de céleri-rave</span>
+                    <span class="price">40€</span>
 
-            <button class="menu">
-                <h3>Noix de coquilles Saint-Jacques</h3>
-                <p>Sur lit de purée de céleri-rave 40€</p>
-            </button>
+                    <span class="checkbox">
+                        <input class="checkbox_input" type="checkbox">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </span>
+                </span>
+            </label>
 
-            <button class="menu">
-                <h3>Langoustine poêlée</h3>
-                <p>Purée de patate douce 35€</p>
-            </button>
+            <label class="menu">
+                <span class="menu-title">Langoustine poêlée</span>
+                <span class="plat-et-prix">
+                    <span class="truncate">Purée de patate douce</span>
+                    <span class="price">35€</span>
 
-            <button class="menu">
-                <h3>Mijoté de queue de boeuf</h3>
-                <p>Et riz sauvage aux zestes de citron 45€</p>
-            </button>
+                    <span class="checkbox">
+                        <input class="checkbox_input" type="checkbox">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </span>
+                </span>
+            </label>
+
+            <label class="menu">
+                <span class="menu-title">Mijoté de queue de boeuf</span>
+                <span class="plat-et-prix">
+                    <span class="truncate">Et riz sauvage aux zestes de citron</span>
+                    <span class="price">45€</span>
+
+                    <span class="checkbox">
+                        <input class="checkbox_input" type="checkbox">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </span>
+                </span>
+            </label>
         </div>
 
-        <div class="part">
+        <div class="part boutons3">
             <h2>DESSERTS</h2>
 
-            <hr noshade width="35" size="3" align="left" color="turquoise">
+            <label class="menu">
+                <span class="menu-title">Macaron noisette et chocolat</span>
+                <span class="plat-et-prix">
+                    <span class="truncate">Glace au caramel brun et sel de Guérande</span>
+                    <span class="price">18€</span>
 
-            <button class="menu">
-                <h3>Macaron noisette et chocolat</h3>
-                <p>Glace au caramel brun et sel de Guérande 18€</p>
-            </button>
+                    <span class="checkbox">
+                        <input class="checkbox_input" type="checkbox">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </span>
+                </span>
+            </label>
 
-            <button class="menu">
-                <h3>Baba aux rhum revisité</h3>
-                <p>Avec son coulis de citron 22€</p>
-            </button>
+            <label class="menu">
+                <span class="menu-title">Baba aux rhum revisité</span>
+                <span class="plat-et-prix">
+                    <span class="truncate">Avec son coulis de citron</span>
+                    <span class="price">22€</span>
 
-            <button class="menu">
-                <h3>Tarte au citron meringuée</h3>
-                <p>Déstructurée 23€</p>
-            </button>
+                    <span class="checkbox">
+                        <input class="checkbox_input" type="checkbox">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </span>
+                </span>
+            </label>
+
+            <label class="menu">
+                <span class="menu-title">Tarte au citron meringuée</span>
+                <span class="plat-et-prix">
+                    <span class="truncate">Déstructurée</span>
+                    <span class="price">23€</span>
+
+                    <span class="checkbox">
+                        <input class="checkbox_input" type="checkbox">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </span>
+                </span>
+            </label>
         </div>
 
         <button class="button-command">Commander</button>
